@@ -1,0 +1,37 @@
+1. Url Dataset : https://www.kaggle.com/datasets/deepankurk/flight-take-off-data-jfk-airport
+
+
+2. DDL Pembuatan tabel :
+
+CREATE TABLE public.table_m3 (
+    MONTH               INT,
+    DAY_OF_MONTH        INT,
+    DAY_OF_WEEK         INT,
+    OP_UNIQUE_CARRIER   VARCHAR(10),
+    TAIL_NUM            VARCHAR(20),
+    DEST                VARCHAR(10),
+    DEP_DELAY           INT,
+    CRS_ELAPSED_TIME    INT,
+    DISTANCE            INT,
+    CRS_DEP_M           INT,
+    DEP_TIME_M          INT,
+    CRS_ARR_M           INT,
+    Temperature         FLOAT,
+    "Dew Point"        	TEXT,
+    Humidity            FLOAT,
+    Wind                VARCHAR(5),
+    "Wind Speed"        INT,
+    "Wind Gust"         INT,
+    Pressure            FLOAT,
+    Condition           VARCHAR(50),
+    sch_dep             INT,
+    sch_arr             INT,
+    TAXI_OUT            INT
+);
+
+3. Syntax DML : 
+
+COPY data_raw
+FROM '/Users/bayu/Documents/P2M3_Bayu_Putradana_data_raw.csv'
+DELIMITER ','
+CSV HEADER;

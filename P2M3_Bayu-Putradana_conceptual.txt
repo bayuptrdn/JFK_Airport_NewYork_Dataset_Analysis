@@ -1,0 +1,29 @@
+Nama : Bayu Putradana
+FTDS 032
+Milestone 3 Conceptual Problem
+
+Conceptual Problems
+
+1. Jelaskan apa yang dimaksud dengan NoSQL menggunakan pemahaman yang kalian ketahui !
+NoSQL adalah jenis database yang tidak menggunakan struktur tabel seperti pada database relasional(database yang menyimpan data dalam bentuk tabel yang saling terhubung melalui relasi (hubungan antar kolom, biasanya lewat primary key dan foreign key)). Biasanya digunakan untuk menyimpan data dalam format yang lebih fleksibel, seperti dokumen, grafik, atau column-based. NoSQL cocok untuk data yang besar, tidak terstruktur, dan sering berubah.
+
+2. Jelaskan kapan harus menggunakan NoSQL dan Relational Database Management System !
+NoSQL digunakan ketika data tidak punya struktur tetap, ukurannya besar, atau butuh kecepatan tinggi seperti pada aplikasi real-time dan big data.
+Sementara Relational Database Management System (RDBMS) digunakan ketika data punya hubungan antar tabel yang jelas, butuh konsistensi tinggi, dan transaksi yang aman, seperti pada sistem keuangan atau data pelanggan.
+
+3. Sebutkan contoh 2 tools/platform NoSQL selain ElasticSearch beserta keunggulan tools/platform tersebut !
+
+MongoDB → Mudah digunakan, fleksibel karena menyimpan data dalam bentuk dokumen JSON, dan cocok untuk data yang sering berubah.
+
+Cassandra → Dikenal sangat cepat dan tahan terhadap kegagalan sistem, cocok untuk aplikasi dengan data besar dan tersebar di banyak server.
+
+4. Jelaskan apa yang Anda ketahui dari Airflow menggunakan pemahaman dan bahasa Anda sendiri !
+Airflow adalah platform yang digunakan untuk mengatur dan menjalankan alur kerja (workflow) data secara otomatis. Dengan Airflow, kita bisa menjadwalkan, memonitor, dan mengelola proses seperti pengambilan data, pembersihan, hingga pemrosesan data. 
+
+5. Jelaskan apa yang Anda ketahui dari Great Expectations menggunakan pemahaman dan bahasa Anda sendiri !
+Great Expectations adalah alat untuk memeriksa kualitas data. Fungsinya memastikan data yang kita gunakan sesuai harapan, misalnya tidak ada nilai kosong, format data benar, atau nilai berada dalam rentang tertentu. Jadi, alat ini membantu menjaga data tetap bersih dan konsisten sebelum digunakan untuk analisis dan pemodelan lebih lanjut.
+
+6. Jelaskan apa yang Anda ketahui dari Batch Processing menggunakan pemahaman dan bahasa Anda sendiri (Definisi, Contoh Kasus Penggunaan, Tools, dll)!
+Batch Processing adalah cara memproses data dalam jumlah besar secara berkala, bukan satu per satu. Biasanya data dikumpulkan dulu, lalu diproses sekaligus dalam satu waktu tertentu (batch).
+Contoh penggunaannya seperti pengolahan data transaksi harian di bank atau perhitungan gaji karyawan setiap bulan.
+Beberapa tools yang biasa digunakan untuk batch processing antara lain Apache Spark dan Airflow. Cara ini efisien untuk pekerjaan yang tidak perlu hasil langsung (real-time).
